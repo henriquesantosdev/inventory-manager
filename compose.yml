@@ -1,0 +1,23 @@
+version: '3.8'
+
+networks:
+  app:
+    driver: bridge
+
+services:
+  mysql:
+    image: mysql
+    container_name: mysql_app
+    restart: unless-stopped
+    networks:
+      - app
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: inventory-manager
+    volumes:
+      - mysqldb:/var/lib/mysql
+
+volumes:
+  mysqldb:
