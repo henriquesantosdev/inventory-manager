@@ -1,6 +1,6 @@
 # 🛠️ Sistema de Gerenciamento de Estoque
 
-Gerencie produtos, estoque, vendas e relatórios com este sistema desenvolvido em Laravel e Vue.js.
+Um genrenciador de estoque de grande escala com dashboard, sessão de registro de produtos, gerenciamento de produto e notificações essenciais como baixa de estoque
 
 ## 🚀 Requisitos
 
